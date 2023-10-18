@@ -1,0 +1,10 @@
+# dependencies
+node_modules
+
+#npm
+package.lock
+
+# .env file 
+.env
+src/config/*.js
+```
