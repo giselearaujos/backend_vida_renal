@@ -29,6 +29,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Cors](https://www.npmjs.com/package/cors)
 - [Dotenv](https://www.npmjs.com/package/dotenv)
 - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [FHIR](https://portal.azure.com/#home)
 
 ## 🔖 Aplicação
 
