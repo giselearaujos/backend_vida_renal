@@ -1,6 +1,4 @@
-<h1 align="center">
-Cap 12 - Gamificando - Escalada ESG - Fase 2
-</h1>
+<h1 align="center">FIAP - Azure FHIR</h1>
 
 <p align="center">
 Projeto desenvolvido a partir dos módulos estudados do curso Sistema para Internet
@@ -19,18 +17,22 @@ Projeto desenvolvido a partir dos módulos estudados do curso Sistema para Inter
 <br>
 
 <p align="center">
-  <img alt="Imagem do protótipo do site" src="./public/img/print.jpg" width="100%">
+  <img alt="Imagem do protótipo do site" src="./assets/fhir.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [ReactJS](https://react.dev/)
+- [Node](https://nodejs.org/en)
+- [Express](https://expressjs.com/)
+- [Cors](https://www.npmjs.com/package/cors)
+- [Dotenv](https://www.npmjs.com/package/dotenv)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## 🔖 Aplicação
 
-Você pode visualizar a aplicação do projeto através [DESSE LINK](https://fiap-cap-12-fase-2.vercel.app/)
+Você pode visualizar a aplicação do frontend através [DESSE LINK]()
 
 ## :memo: Licença
 

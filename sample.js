@@ -2,17 +2,6 @@ const axios = require("axios");
 const config = require("./config/configs");
 
 
-// Step 1 - Define the constant values.
-// const aadTenant = "https://login.microsoftonline.com/";
-// const aadTenantId = "e59a288a-a568-4fc9-9873-043de0bedd67";
-
-// const appId = "95c88fa9-064d-4214-bbdf-fbf86a4734cf";
-// const appSecret = "Few8Q~zWk648QEpsTpBeaNX5N7RDbr8c~GrRLayf";
-
-// const fhirEndpoint =
-//   "https://demovidarenal-fhirservice.fhir.azurehealthcareapis.com/";
-
-///////////////////////////////////////////////////////////
 
 function getHttpHeader(accessToken) {  
   return {
@@ -36,18 +25,15 @@ function printResponseResults(response) {
   const responseAsJson = response.data;
 
   if (!responseAsJson.entry) {
-    // Print the resource type and id of a resource.
+   
     printResourceData(responseAsJson);
-  } else {
-    // Prints the resource type and ids of all resources under a bundle.
+  } else {   
     for (const item of responseAsJson.entry) {
       const resource = item.resource;
       printResourceData(resource);
     }
   }
 }
-
-///////////////////////////////////////////////////////////
 
 async function getAuthToken() {
   try {
@@ -76,7 +62,6 @@ async function getAuthToken() {
 }
 
 async function postPatient(accessToken, data) {
-  // Example of FHIR Patient: https://www.hl7.org/fhir/patient-example.json.html
 
   const patientData = {
     resourceType: "Patient",
@@ -136,8 +121,6 @@ async function postPatient(accessToken, data) {
 }
 
 async function printPatientInfo(patientId, accessToken) {
-  // GET htts://<fhir endpoint>/Patient/<patientId>
-
   const baseUrl = config.fhirEndpoint + "Patient/" + patientId;
 
   try {
@@ -207,8 +190,6 @@ const seed = async () => {
   printPatientInfo(patientId, accessToken);
 };
 
-// Para popular os dados, descomente abaixo e execute
-// apenas uma vez
 // seed();
 
 module.exports = {
