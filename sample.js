@@ -2,7 +2,6 @@ const axios = require("axios");
 const config = require("./config/configs");
 
 
-
 function getHttpHeader(accessToken) {  
   return {
     Authorization: "Bearer " + accessToken,
@@ -53,9 +52,6 @@ async function getAuthToken() {
     );
     return accessToken;
   } catch (error) {
-
-    console.log("🚀 ~ error:", error)
-
     console.log("\tError getting token: " + error.response.status);
     return null;
   }
@@ -156,8 +152,6 @@ async function deletePatient(patientId, accessToken) {
     const response = await axios.delete(baseUrl, {
       headers: getHttpHeader(accessToken),
     });
-
-    console.log("🚀 ~ response:", response.status)
 
     if(response.status === 204) {
       return null;

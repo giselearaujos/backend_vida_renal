@@ -9,7 +9,7 @@ const {
 } = require("./sample");
 
 const app = express();
-const port = 3004 || process.env.PORT; 
+const port = process.env.PORT || 3004;
 
 
 app.use(cors());
