@@ -33,7 +33,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🔖 Aplicação
 
-Você pode visualizar a aplicação do frontend através [DESSE LINK]()
+Você pode visualizar a aplicação do frontend através [DESSE LINK](https://giselearaujos.github.io/frontend_vida_renal/)
 
 ## :memo: Licença
 
